@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kebijakan Privasi — Samawar</title>
+<meta name="description" content="Kebijakan privasi aplikasi Samawar untuk Android. Privacy policy of the Samawar Android app.">
+<link rel="icon" type="image/png" href="../img/samawar_icon_app.png">
+<link rel="canonical" href="https://samawar.replaceid.org/privacy/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --forest:#16241d;--forest-deep:#0f1a14;--tufa:#c9c3b6;
+  --aqua:#12b5c4;--aqua-dim:#0d8996;--gold:#c89b3c;
+  --cream:#ede6d6;--ink:#0c1510;
+  --font-display:'Cormorant Garamond',Georgia,serif;--font-body:'Outfit',system-ui,sans-serif;--font-mono:'Space Mono',ui-monospace,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);background:var(--forest);color:var(--cream);line-height:1.7;overflow-x:hidden}
+a{color:var(--aqua)}
+a:hover{color:var(--cream)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--aqua);outline-offset:3px}
+.wrap{max-width:760px;margin:0 auto;padding:0 28px}
+
+nav{position:sticky;top:0;z-index:100;background:rgba(15,26,20,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(237,230,214,.08)}
+.nav-inner{max-width:1180px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-family:var(--font-display);font-size:1.5rem;font-weight:700;letter-spacing:.02em;color:var(--cream);text-decoration:none}
+.brand span{color:var(--aqua)}
+.nav-right{display:flex;align-items:center;gap:20px}
+.back{font-size:.88rem;font-weight:500;color:rgba(237,230,214,.75);text-decoration:none}
+.back:hover{color:var(--aqua)}
+.lang{display:inline-flex;border:1.5px solid rgba(237,230,214,.22);border-radius:100px;overflow:hidden;font-family:var(--font-mono)}
+.lang button{background:transparent;border:none;color:rgba(237,230,214,.6);font-size:.72rem;font-weight:700;letter-spacing:.08em;padding:8px 14px;cursor:pointer;font-family:var(--font-mono);transition:background .3s,color .3s}
+.lang button.active{background:var(--aqua);color:#04262a}
+
+header{padding:72px 0 36px;background:radial-gradient(ellipse 70% 80% at 80% 0%, rgba(18,181,196,.12), transparent 60%),linear-gradient(180deg,var(--forest-deep),var(--forest))}
+.eyebrow{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--aqua);display:inline-block;margin-bottom:16px}
+h1,h2,h3{font-family:var(--font-display);font-weight:600;line-height:1.15;text-wrap:balance}
+h1{font-size:clamp(2.4rem,6vw,3.6rem);margin-bottom:20px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 26px;font-family:var(--font-mono);font-size:.74rem;letter-spacing:.04em;color:rgba(237,230,214,.55)}
+.meta b{color:var(--cream);font-weight:400}
+
+main{padding:16px 0 90px}
+.summary{background:linear-gradient(160deg,rgba(201,195,182,.09),rgba(201,195,182,.03));border:1px solid rgba(201,195,182,.14);border-radius:20px;padding:30px 32px;margin:8px 0 18px}
+.summary h2{font-size:1.6rem;margin:0 0 12px;color:var(--gold)}
+article p,article li{color:rgba(237,230,214,.82);font-weight:300}
+article h2{font-size:1.85rem;margin:46px 0 12px}
+article h3{font-size:1.3rem;margin:26px 0 6px;color:var(--cream)}
+article p{margin-bottom:14px}
+article ul{list-style:none;margin-bottom:14px}
+article li{padding:5px 0 5px 24px;position:relative}
+article li::before{content:'';position:absolute;left:0;top:15px;width:8px;height:8px;border-radius:50%;background:var(--aqua)}
+.lead{font-size:1.08rem}
+.notice{border-left:3px solid var(--gold);padding:6px 0 6px 18px;margin:10px 0 16px;font-style:italic;color:var(--cream)!important}
+.mono{font-family:var(--font-mono);font-size:.86em;overflow-wrap:anywhere}
+.contact{font-family:var(--font-mono);color:var(--aqua);user-select:all;overflow-wrap:anywhere}
+[hidden]{display:none!important}
+
+footer{background:var(--ink);padding:36px 0;border-top:1px solid rgba(237,230,214,.08);text-align:center;color:rgba(237,230,214,.45);font-size:.84rem}
+footer a{color:rgba(237,230,214,.7)}
+
+@media(max-width:600px){
+  .wrap,.nav-inner{padding-left:18px;padding-right:18px}
+  .back{display:none}
+  header{padding-top:48px}
+  .summary{padding:24px 22px}
+}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="../" class="brand">Sama<span>war</span></a>
+    <div class="nav-right">
+      <a href="../" class="back" data-id="← Kembali ke beranda" data-en="← Back to home">← Kembali ke beranda</a>
+      <div class="lang" role="group" aria-label="Language">
+        <button id="lang-id" class="active" onclick="setLang('id')">ID</button>
+        <button id="lang-en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <span class="eyebrow" data-id="Aplikasi Samawar · Android" data-en="Samawar App · Android">Aplikasi Samawar · Android</span>
+    <h1 data-id="Kebijakan Privasi" data-en="Privacy Policy">Kebijakan Privasi</h1>
+    <div class="meta">
+      <span data-id="Berlaku <b>29 Oktober 2026</b>" data-en="Effective <b>29 October 2026</b>">Berlaku <b>29 Oktober 2026</b></span>
+      <span data-id="Versi aplikasi <b>1.0.0</b>" data-en="App version <b>1.0.0</b>">Versi aplikasi <b>1.0.0</b></span>
+      <span data-id="Paket <b>com.REPLACEID.Samawar</b>" data-en="Package <b>com.REPLACEID.Samawar</b>">Paket <b>com.REPLACEID.Samawar</b></span>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+<!-- ================= BAHASA INDONESIA ================= -->
+<article id="policy-id" lang="id">
+  <p class="lead">Kebijakan privasi ini berlaku untuk aplikasi Samawar di Android ("Aplikasi") yang dikelola oleh Tim Peneliti Samawar, tim peneliti penerima hibah Dana Indonesiana ("Penyedia Layanan"). Samawar adalah panduan augmented reality yang gratis dan tanpa iklan untuk sarkofagus megalitik Situs Ai Renung di Desa Batu Tering, Sumbawa, Indonesia.</p>
+
+  <div class="summary">
+    <h2>Ringkasnya</h2>
+    <ul>
+      <li>Tidak ada akun, pendaftaran, maupun iklan.</li>
+      <li>Penyedia Layanan tidak mengumpulkan, menyimpan, menjual, atau membagikan data pribadi Anda.</li>
+      <li>Kamera dipakai di perangkat Anda untuk menampilkan model 3D dan membaca kode QR di situs.</li>
+      <li>Pilihan bahasa (Indonesia atau Inggris) hanya disimpan di perangkat Anda.</li>
+      <li>Komponen augmented reality dari Google dan Niantic dapat memproses sebagian data teknis sesuai kebijakan privasi masing-masing (lihat bagian 3).</li>
+    </ul>
+  </div>
+
+  <h2>1. Informasi yang ditangani Aplikasi</h2>
+  <p>Aplikasi tidak meminta nama, alamat email, nomor telepon, atau data pribadi lain, dan tidak memuat kode analitik atau iklan yang dikelola Penyedia Layanan.</p>
+  <p>Satu-satunya informasi yang disimpan Aplikasi adalah pilihan bahasa Anda. Informasi ini tersimpan di perangkat Anda dan terhapus saat Aplikasi dicopot.</p>
+
+  <h2>2. Izin perangkat</h2>
+  <h3>Kamera</h3>
+  <p>Dipakai untuk menampilkan model 3D sarkofagus dalam augmented reality dan memindai kode QR yang dipasang di situs. Gambar kamera diproses di perangkat Anda. Penyedia Layanan tidak merekam, menyimpan, atau mengirimkannya.</p>
+  <h3>Lokasi (perkiraan dan akurat)</h3>
+  <p>Izin ini dideklarasikan oleh komponen augmented reality yang disertakan dalam Aplikasi (Google ARCore dan Niantic Lightship). Penyedia Layanan tidak membaca, menyimpan, atau mengirim lokasi Anda. Anda dapat menolak atau mencabut izin ini kapan saja melalui pengaturan Android.</p>
+  <h3>Internet dan getar</h3>
+  <p>Akses internet memungkinkan komponen augmented reality bekerja. Getar memberi umpan balik saat Anda berinteraksi dengan Aplikasi.</p>
+
+  <h2>3. Layanan pihak ketiga</h2>
+  <p>Aplikasi memakai layanan pihak ketiga yang memiliki kebijakan privasi sendiri:</p>
+  <h3>Google Play Services for AR (ARCore)</h3>
+  <p class="notice">Aplikasi ini berjalan di atas Google Play Services for AR (ARCore), yang disediakan oleh Google dan tunduk pada <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Kebijakan Privasi Google</a>.</p>
+  <h3>Niantic Lightship</h3>
+  <p>SDK augmented reality dari Niantic dapat mengumpulkan telemetri teknis dan sebuah pengenal yang dibuatnya di perangkat Anda saat Aplikasi pertama kali dijalankan. Pengenal ini berganti jika Aplikasi dipasang ulang. Lihat <a href="https://www.nianticspatial.com/legal/data-privacy/niantic-spatial-platform-sdk" target="_blank" rel="noopener">informasi privasi data SDK Niantic Spatial</a> dan <a href="https://www.nianticspatial.com/privacy-business" target="_blank" rel="noopener">Kebijakan Privasi Niantic Spatial</a>.</p>
+  <h3>Unity</h3>
+  <p>Aplikasi dibangun dengan mesin Unity. Layanan analitik opsional Unity dinonaktifkan di Aplikasi ini. Lihat <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Kebijakan Privasi Unity</a>.</p>
+  <h3>Google Play</h3>
+  <p>Aplikasi didistribusikan melalui Google Play, yang tunduk pada <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Kebijakan Privasi Google</a>.</p>
+  <p>Penyedia tersebut dapat memproses data di negara selain negara Anda, termasuk di luar Kawasan Ekonomi Eropa.</p>
+
+  <h2>4. Penyimpanan dan penghapusan data</h2>
+  <p>Penyedia Layanan tidak menyimpan data pribadi Anda, sehingga tidak ada data yang perlu dihapus di pihaknya. Mencopot Aplikasi akan menghapus pilihan bahasa yang tersimpan. Untuk data yang diproses Google atau Niantic, gunakan opsi yang dijelaskan dalam kebijakan privasi mereka. Anda juga dapat menghubungi Penyedia Layanan dan kami akan membantu mengarahkan ke penyedia yang tepat.</p>
+
+  <h2>5. Hak Anda</h2>
+  <p>Bergantung pada tempat tinggal Anda, termasuk menurut Peraturan Perlindungan Data Umum Uni Eropa (GDPR) dan Undang-Undang Pelindungan Data Pribadi Indonesia, Anda mungkin berhak mengakses, memperbaiki, atau menghapus data pribadi, menolak pemrosesan, dan mengajukan pengaduan kepada otoritas pelindungan data. Karena Penyedia Layanan tidak mengumpulkan data pribadi, sebagian besar permintaan akan berkaitan dengan layanan pihak ketiga di atas. Hubungi kami jika ada pertanyaan tentang hak-hak ini.</p>
+
+  <h2>6. Anak-anak</h2>
+  <p>Samawar adalah panduan warisan budaya yang sesuai untuk pengunjung segala usia. Penyedia Layanan tidak dengan sengaja mengumpulkan informasi pribadi dari siapa pun, termasuk anak di bawah 16 tahun. Jika Anda menduga seorang anak memberikan informasi pribadi melalui Aplikasi, hubungi kami dan kami akan mengambil tindakan yang sesuai.</p>
+
+  <h2>7. Keamanan</h2>
+  <p>Aplikasi tidak mengirimkan data pribadi kepada Penyedia Layanan. Data yang ditangani layanan pihak ketiga dilindungi sesuai praktik keamanan masing-masing.</p>
+
+  <h2>8. Perubahan kebijakan</h2>
+  <p>Penyedia Layanan dapat memperbarui kebijakan ini, misalnya saat Aplikasi mendapat fitur baru. Kebijakan yang diperbarui akan dimuat di halaman ini dengan tanggal berlaku yang baru.</p>
+
+  <h2>9. Kontak</h2>
+  <p>Untuk pertanyaan seputar privasi di Samawar, kirim email kepada Tim Peneliti Samawar di <span class="contact">umar@uts.ac.id</span>.</p>
+</article>
+
+<!-- ================= ENGLISH ================= -->
+<article id="policy-en" lang="en" hidden>
+  <p class="lead">This privacy policy applies to the Samawar app for Android (the "Application"), operated by the Samawar Research Team, a research team awarded the Dana Indonesiana grant (the "Service Provider"). Samawar is a free, ad-free augmented reality guide to the megalithic sarcophagi of the Ai Renung site in Batu Tering Village, Sumbawa, Indonesia.</p>
+
+  <div class="summary">
+    <h2>In short</h2>
+    <ul>
+      <li>There is no account, no sign-up and no advertising.</li>
+      <li>The Service Provider does not collect, store, sell or share your personal data.</li>
+      <li>The camera is used on your device to show 3D models and read QR codes at the site.</li>
+      <li>Your language choice (Indonesian or English) is saved only on your device.</li>
+      <li>The augmented reality components from Google and Niantic may process some technical data under their own privacy policies (see section 3).</li>
+    </ul>
+  </div>
+
+  <h2>1. Information the Application handles</h2>
+  <p>The Application does not ask for your name, email address, phone number or any other personal details, and it contains no analytics or advertising code operated by the Service Provider.</p>
+  <p>The only information the Application saves is your language preference. It is stored locally on your device and is removed when you uninstall the Application.</p>
+
+  <h2>2. Device permissions</h2>
+  <h3>Camera</h3>
+  <p>Used to display 3D sarcophagus models in augmented reality and to scan the QR codes placed at the site. Camera images are processed on your device. The Service Provider does not record, store or transmit them.</p>
+  <h3>Location (approximate and precise)</h3>
+  <p>This permission is declared by the augmented reality components included in the Application (Google ARCore and Niantic Lightship). The Service Provider does not read, store or send your location. You can refuse or revoke this permission at any time in your Android settings.</p>
+  <h3>Internet and vibration</h3>
+  <p>Internet access lets the augmented reality components work. Vibration provides feedback when you interact with the Application.</p>
+
+  <h2>3. Third-party services</h2>
+  <p>The Application uses third-party services that have their own privacy policies:</p>
+  <h3>Google Play Services for AR (ARCore)</h3>
+  <p class="notice">This application runs on Google Play Services for AR (ARCore), which is provided by Google and governed by the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+  <h3>Niantic Lightship</h3>
+  <p>Niantic's augmented reality SDK may collect technical telemetry and an identifier that it generates on your device when the Application is first run. This identifier changes if you reinstall the Application. See the <a href="https://www.nianticspatial.com/legal/data-privacy/niantic-spatial-platform-sdk" target="_blank" rel="noopener">Niantic Spatial SDK data privacy information</a> and the <a href="https://www.nianticspatial.com/privacy-business" target="_blank" rel="noopener">Niantic Spatial Privacy Policy</a>.</p>
+  <h3>Unity</h3>
+  <p>The Application is built with the Unity engine. Unity's optional analytics services are turned off in this Application. See the <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity Privacy Policy</a>.</p>
+  <h3>Google Play</h3>
+  <p>The Application is distributed through Google Play, which is covered by the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+  <p>These providers may process data in countries other than your own, including outside the European Economic Area.</p>
+
+  <h2>4. Data retention and deletion</h2>
+  <p>The Service Provider holds no personal data about you, so there is nothing to delete on its side. Uninstalling the Application removes your saved language preference. For data processed by Google or Niantic, use the options described in their privacy policies. You may also write to the Service Provider and we will help you reach the right provider.</p>
+
+  <h2>5. Your rights</h2>
+  <p>Depending on where you live, including under the EU General Data Protection Regulation and the California Consumer Privacy Act, you may have the right to access, correct or delete personal data, to object to processing and to lodge a complaint with a data protection authority. Because the Service Provider does not collect personal data, most requests will concern the third-party services above. Write to us if you have any question about these rights.</p>
+
+  <h2>6. Children</h2>
+  <p>Samawar is a cultural heritage guide suitable for visitors of all ages. The Service Provider does not knowingly collect personal information from anyone, including children under 16. If you believe a child has provided personal information through the Application, contact us and we will take appropriate action.</p>
+
+  <h2>7. Security</h2>
+  <p>The Application does not transmit personal data to the Service Provider. Data handled by third-party services is protected according to their own security practices.</p>
+
+  <h2>8. Changes to this policy</h2>
+  <p>The Service Provider may update this policy, for example when the Application gains new features. The updated policy will be published on this page with a new effective date.</p>
+
+  <h2>9. Contact</h2>
+  <p>For questions about privacy in Samawar, email the Samawar Research Team at <span class="contact">umar@uts.ac.id</span>.</p>
+</article>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap" data-id="© 2026 Samawar · <a href=&quot;../&quot;>Beranda</a> · Didukung Dana Indonesiana" data-en="© 2026 Samawar · <a href=&quot;../&quot;>Home</a> · Supported by Dana Indonesiana">© 2026 Samawar · <a href="../">Beranda</a> · Didukung Dana Indonesiana</div>
+</footer>
+
+<script>
+// Same language switch and storage key as the home page, so the choice carries over.
+function setLang(lang){
+  document.querySelectorAll('[data-id]').forEach(el=>{
+    const val = (lang==='en') ? el.getAttribute('data-en') : el.getAttribute('data-id');
+    if(val!==null) el.innerHTML = val;
+  });
+  document.getElementById('policy-id').hidden = (lang==='en');
+  document.getElementById('policy-en').hidden = (lang!=='en');
+  document.getElementById('lang-id').classList.toggle('active', lang==='id');
+  document.getElementById('lang-en').classList.toggle('active', lang==='en');
+  document.documentElement.lang = lang;
+  document.title = (lang==='en' ? 'Privacy Policy' : 'Kebijakan Privasi') + ' — Samawar';
+  try{ localStorage.setItem('samawar_lang', lang); }catch(e){}
+}
+(function(){
+  // Priority: #en / #id in the link, then the saved choice, then the browser language.
+  const hash = (location.hash||'').replace('#','').toLowerCase();
+  let lang = null;
+  if(hash==='en' || hash==='id') lang = hash;
+  if(!lang){ try{ lang = localStorage.getItem('samawar_lang'); }catch(e){} }
+  if(!lang){ lang = (navigator.language||'').toLowerCase().startsWith('id') ? 'id' : 'en'; }
+  setLang(lang);
+})();
+</script>
+</body>
+</html>
